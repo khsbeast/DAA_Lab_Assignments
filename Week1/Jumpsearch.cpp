@@ -19,7 +19,7 @@ int jumps(int a[], int index, int n, int key)
             break;
         }
         kount++;
-        index *= 2;
+        index >> 1;
     }
     if(index>n)
       index/=2;
@@ -49,9 +49,9 @@ int main()
     cin >> key;
     int index = jumps(a, 1, n, key);
     if (index == -1)
-        cout << "Present : ";
+        cout << "Not Present ";
     else
-        cout << "Not Present : ";
+        cout << "Present ";
     cout << kount << endl;
   }
 }

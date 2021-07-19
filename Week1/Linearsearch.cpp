@@ -17,11 +17,11 @@ int main()
     if(a[i]==key)
     {
       found=1;
-      cout << "Present : " << kount;
+      cout << "Present " << kount;
       break;
     }
   }
   if(!found)
-    cout << "Not Present : " << kount;
+    cout << "Not Present " << kount;
   }
 }
