@@ -49,9 +49,9 @@ int main()
     cin >> key;
     int index = jumps(a, 1, n, key);
     if (index == -1)
-        cout << "Element not found after ";
+        cout << "Present : ";
     else
-        cout << "Element found after ";
-    cout << kount << " Comparisions" << endl;
+        cout << "Not Present : ";
+    cout << kount << endl;
   }
 }

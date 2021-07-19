@@ -5,6 +5,9 @@ of comparisons for each input case. (Time Complexity = O(n), where n is the size
 using namespace std;
 int main()
 {
+  int t;
+  cin >> t;
+  while(t--){
   int n,key;
   cin >> n >> key;
   int a[n],found=0,kount=0;
@@ -14,10 +17,11 @@ int main()
     if(a[i]==key)
     {
       found=1;
-      cout << "Element found at : " << kount << " position";
+      cout << "Present : " << kount;
       break;
     }
   }
   if(!found)
-    cout << "Element not present checked " << kount << " indexes";
+    cout << "Not Present : " << kount;
+  }
 }
